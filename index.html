@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="House Prime Decors — Design de interiores e acabamentos de alto padrão em Maputo e Matola."/>
+  <title>House Prime Decors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div id="grain" aria-hidden="true"></div>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="House Prime Decors">
+        <div class="logo" aria-hidden="true"></div>
+        <span>
+          <span class="name">House Prime Decors</span>
+          <span class="tag">Design &amp; Acabamentos</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./services.html">Serviços</a>
+        <a href="./projects.html">Projetos</a>
+        <a href="./process.html">Processo</a>
+        <a href="./about.html">Sobre</a>
+        <a href="./contact.html">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
+        <a class="btn btn-primary" href="./contact.html#quote">Orçamento</a>
+        <button class="btn btn-icon btn-ghost hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mmenu" id="mmenu" aria-hidden="true">
+    <div class="mmenu-panel">
+      <div class="mmenu-card">
+        <div class="mmenu-top">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <span><span class="name">House Prime Decors</span><span class="tag">Maputo · Matola</span></span>
+          </div>
+          <button class="btn btn-icon btn-ghost" id="menuClose" aria-label="Fechar">✕</button>
+        </div>
+        <div class="mmenu-links">
+          <a href="./index.html" data-close aria-current="page">Home</a>
+          <a href="./services.html" data-close>Serviços</a>
+          <a href="./projects.html" data-close>Projetos</a>
+          <a href="./process.html" data-close>Processo</a>
+          <a href="./about.html" data-close>Sobre</a>
+          <a href="./contact.html" data-close>Contacto</a>
+        </div>
+        <div class="mmenu-cta">
+          <a class="btn btn-ghost js-wa" href="#" data-close>WhatsApp</a>
+          <a class="btn btn-primary" href="./contact.html#quote" data-close>Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO full-bleed com fotos reais -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-bg">
+        <div class="slider" id="heroSlider" aria-hidden="true">
+          <div class="slide-track">
+            <div class="slide">
+              <div class="ph" style="background-image:url('./assets/kitchen-11.jpg'); background-size:cover; background-position:center"></div>
+            </div>
+            <div class="slide">
+              <div class="ph" style="background-image:url('./assets/kitchen-01.jpg'); background-size:cover; background-position:center"></div>
+            </div>
+            <div class="slide">
+              <div class="ph" style="background-image:url('./assets/ceiling-02.jpg'); background-size:cover; background-position:center"></div>
+            </div>
+            <div class="slide">
+              <div class="ph" style="background-image:url('./assets/tvpanel-01.jpg'); background-size:cover; background-position:center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-eyebrow reveal">
+          <div class="hero-line" aria-hidden="true"></div>
+          <span class="badge">Maputo · Matola · Marracuene · Boane</span>
+        </div>
+        <h1 class="hero-headline reveal">
+          Espaços que <em>inspiram</em> quem os vive
+        </h1>
+        <p class="hero-sub reveal">
+          Design de interiores e acabamentos de alto padrão.<br>
+          Do primeiro traço ao detalhe final.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="./contact.html#quote">Pedir orçamento</a>
+          <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
+          <a class="btn btn-link" href="./projects.html" style="color:rgba(245,240,232,.55)">Ver projetos →</a>
+        </div>
+      </div>
+
+      <div class="hero-dotbar" aria-label="Slides">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+        <button class="dot" aria-label="Slide 4"></button>
+      </div>
+      <div class="slide-caption" id="slideCaption">Cozinha · Maputo</div>
+      <div class="hero-arrows">
+        <button class="btn btn-icon" id="heroPrev" aria-label="Anterior">‹</button>
+        <button class="btn btn-icon" id="heroNext" aria-label="Seguinte">›</button>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span>Descer</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Design de interiores</span>
+        <span class="marquee-item">Tetos falsos</span>
+        <span class="marquee-item">Cozinhas americanas</span>
+        <span class="marquee-item">Painéis TV</span>
+        <span class="marquee-item">Closets &amp; Guarda-fatos</span>
+        <span class="marquee-item">Pavimentos</span>
+        <span class="marquee-item">Pintura &amp; Barramento</span>
+        <span class="marquee-item">Portas de madeira</span>
+        <span class="marquee-item">Alumínio</span>
+        <span class="marquee-item">Projeção em 3D</span>
+        <span class="marquee-item">Design de interiores</span>
+        <span class="marquee-item">Tetos falsos</span>
+        <span class="marquee-item">Cozinhas americanas</span>
+        <span class="marquee-item">Painéis TV</span>
+        <span class="marquee-item">Closets &amp; Guarda-fatos</span>
+        <span class="marquee-item">Pavimentos</span>
+        <span class="marquee-item">Pintura &amp; Barramento</span>
+        <span class="marquee-item">Portas de madeira</span>
+        <span class="marquee-item">Alumínio</span>
+        <span class="marquee-item">Projeção em 3D</span>
+      </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stats-grid">
+        <div class="stat-cell reveal"><span class="stat-number" data-count="200">0</span><span class="stat-label">Projetos concluídos</span></div>
+        <div class="stat-cell reveal"><span class="stat-number" data-count="8">0</span><span class="stat-label">Anos de experiência</span></div>
+        <div class="stat-cell reveal"><span class="stat-number" data-count="4">0</span><span class="stat-label">Zonas cobertas</span></div>
+        <div class="stat-cell reveal"><span class="stat-number" data-count="100">0</span><span class="stat-label">% satisfação</span></div>
+      </div>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <section class="section">
+      <div class="container">
+        <div class="shead">
+          <div class="reveal">
+            <span class="kicker">O que fazemos</span>
+            <h2>Três pilares,<br>um resultado completo</h2>
+          </div>
+          <div class="shead-actions reveal">
+            <a class="btn btn-outline" href="./services.html">Ver todos os serviços</a>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-media" style="background-image:url('./assets/kitchen-03.jpg'); background-size:cover; background-position:center"></div>
+            <div class="card-pad">
+              <div class="card-title"><h3>Design de interiores</h3><div class="iconbox gold">✦</div></div>
+              <p>Cozinhas, closets, painéis TV e cortinas — planeamento com visão e funcionalidade.</p>
+              <a class="btn btn-link" href="./services.html#design">Explorar</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media" style="background-image:url('./assets/ceiling-01.jpg'); background-size:cover; background-position:center"></div>
+            <div class="card-pad">
+              <div class="card-title"><h3>Acabamentos</h3><div class="iconbox">◈</div></div>
+              <p>Tetos falsos, pintura e pavimentos — os detalhes que definem o ambiente.</p>
+              <a class="btn btn-link" href="./services.html#acaba">Explorar</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media" style="background-image:url('./assets/kitchen-10.jpg'); background-size:cover; background-position:center"></div>
+            <div class="card-pad">
+              <div class="card-title"><h3>Instalações</h3><div class="iconbox">▣</div></div>
+              <p>Portas de madeira, alumínio e carpintaria — execução com acabamento premium.</p>
+              <a class="btn btn-link" href="./services.html#instal">Explorar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA preview — 6 fotos selecionadas -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="shead">
+          <div class="reveal">
+            <span class="kicker">Portfólio</span>
+            <h2>Trabalhos recentes</h2>
+          </div>
+          <div class="shead-actions reveal">
+            <a class="btn btn-primary" href="./projects.html">Ver galeria completa</a>
+          </div>
+        </div>
+        <div class="masonry">
+
+          <div class="tile reveal" data-cat="kitchens" data-title="Cozinha moderna · Maputo" data-note="Cozinha americana com ilha" data-img="./assets/kitchen-11.jpg">
+            <div class="tile-media" style="background-image:url('./assets/kitchen-11.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
+              <div class="tile-media-overlay"></div>
+              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha com ilha central</div><span class="hi-cta">Ver projeto</span></div>
+            </div>
+            <div class="tile-meta"><div><div class="t1">Cozinhas</div><div class="t2">Ilha central · Maputo</div></div><div class="tile-tag">cozinha</div></div>
+          </div>
+
+          <div class="tile reveal" data-cat="kitchens" data-title="Cozinha beige · Matola" data-note="Acabamentos em madeira e beige" data-img="./assets/kitchen-01.jpg">
+            <div class="tile-media" style="background-image:url('./assets/kitchen-01.jpg'); background-size:cover; background-position:center">
+              <div class="tile-media-overlay"></div>
+              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha beige &amp; madeira</div><span class="hi-cta">Ver projeto</span></div>
+            </div>
+            <div class="tile-meta"><div><div class="t1">Cozinhas</div><div class="t2">Beige &amp; madeira · Matola</div></div><div class="tile-tag">cozinha</div></div>
+          </div>
+
+          <div class="tile reveal" data-cat="ceilings" data-title="Teto falso · Maputo" data-note="LED linear com geometria" data-img="./assets/ceiling-01.jpg">
+            <div class="tile-media" style="background-image:url('./assets/ceiling-01.jpg'); background-size:cover; background-position:center; aspect-ratio:3/4">
+              <div class="tile-media-overlay"></div>
+              <div class="tile-hover-info"><span class="hi-cat">Tetos falsos</span><div class="hi-title">Teto geométrico com LED</div><span class="hi-cta">Ver projeto</span></div>
+            </div>
+            <div class="tile-meta"><div><div class="t1">Tetos falsos</div><div class="t2">LED linear · Maputo</div></div><div class="tile-tag">tetos</div></div>
+          </div>
+
+          <div class="tile reveal" data-cat="tvpanels living" data-title="Painel TV · Maputo" data-note="Painel TV com iluminação quente" data-img="./assets/tvpanel-01.jpg">
+            <div class="tile-media" style="background-image:url('./assets/tvpanel-01.jpg'); background-size:cover; background-position:center; aspect-ratio:3/4">
+              <div class="tile-media-overlay"></div>
+              <div class="tile-hover-info"><span class="hi-cat">Painéis TV</span><div class="hi-title">Painel TV iluminado</div><span class="hi-cta">Ver projeto</span></div>
+            </div>
+            <div class="tile-meta"><div><div class="t1">Painel TV</div><div class="t2">Iluminação quente · Maputo</div></div><div class="tile-tag">TV</div></div>
+          </div>
+
+          <div class="tile reveal" data-cat="kitchens" data-title="Cozinha escura · Matola" data-note="Armários cinza escuro e balcão branco" data-img="./assets/kitchen-08.jpg">
+            <div class="tile-media" style="background-image:url('./assets/kitchen-08.jpg'); background-size:cover; background-position:center; aspect-ratio:16/9">
+              <div class="tile-media-overlay"></div>
+              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha em cinza escuro</div><span class="hi-cta">Ver projeto</span></div>
+            </div>
+            <div class="tile-meta"><div><div class="t1">Cozinhas</div><div class="t2">Cinza escuro · Matola</div></div><div class="tile-tag">cozinha</div></div>
+          </div>
+
+          <div class="tile reveal" data-cat="ceilings living" data-title="Sala com teto falso · Maputo" data-note="Espaço amplo com LED azul" data-img="./assets/ceiling-02.jpg">
+            <div class="tile-media" style="background-image:url('./assets/ceiling-02.jpg'); background-size:cover; background-position:center">
+              <div class="tile-media-overlay"></div>
+              <div class="tile-hover-info"><span class="hi-cat">Salas</span><div class="hi-title">Sala com LED e escada</div><span class="hi-cta">Ver projeto</span></div>
+            </div>
+            <div class="tile-meta"><div><div class="t1">Salas</div><div class="t2">LED azul · Maputo</div></div><div class="tile-tag">sala</div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="shead">
+          <div class="reveal"><span class="kicker">Como trabalhamos</span><h2>Seis passos, zero surpresas</h2></div>
+          <div class="shead-actions reveal"><a class="btn btn-outline" href="./process.html">Ver detalhes</a></div>
+        </div>
+        <div class="timeline-grid">
+          <div class="step reveal"><span class="n">01</span><div class="t">Contacto</div><div class="d">Fale connosco e diga o que pretende.</div></div>
+          <div class="step reveal"><span class="n">02</span><div class="t">Visita</div><div class="d">Avaliamos o espaço no local.</div></div>
+          <div class="step reveal"><span class="n">03</span><div class="t">3D</div><div class="d">Visualiza o resultado antes de executar.</div></div>
+          <div class="step reveal"><span class="n">04</span><div class="t">Aprovação</div><div class="d">Validas o projeto com total controlo.</div></div>
+          <div class="step reveal"><span class="n">05</span><div class="t">Orçamento</div><div class="d">Proposta clara e sem surpresas.</div></div>
+          <div class="step reveal"><span class="n">06</span><div class="t">Execução</div><div class="d">Obra com acabamento premium.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta reveal">
+      <div class="container cta-row">
+        <div>
+          <span class="kicker" style="color:rgba(196,160,90,.6)">Próximo passo</span>
+          <h2>Pronto para transformar o seu espaço?</h2>
+          <p class="lead">Atendemos Maputo Cidade, Matola, Marracuene, Matola Rio, Boane e Katembe.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
+          <a class="btn btn-primary" href="./contact.html#quote">Pedir orçamento</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="mobile-cta" aria-label="Ações rápidas">
+    <div class="wrap">
+      <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
+      <a class="btn btn-primary" href="./contact.html#quote">Pedir orçamento</a>
+    </div>
+  </div>
+
+  <div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador">
+    <div class="lb-card">
+      <div class="lb-top">
+        <div class="lb-title" id="lbTitle">Projeto</div>
+        <button class="btn btn-icon lb-close" id="lbClose" aria-label="Fechar">✕</button>
+      </div>
+      <div class="lb-body" id="lbBody">
+        <div class="lb-note" id="lbNote"></div>
+        <div class="lb-nav">
+          <button class="btn btn-icon" id="lbPrev" aria-label="Anterior">‹</button>
+          <button class="btn btn-icon" id="lbNext" aria-label="Seguinte">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><div class="logo" aria-hidden="true"></div><span><span class="name">House Prime Decors, Lda</span><span class="tag">Design de interiores · Acabamentos</span></span></div>
+        <p class="small" style="margin-top:14px">Maputo · Matola · Marracuene · Matola Rio · Boane · Katembe</p>
+        <div class="links"><a class="js-wa" href="#">WhatsApp</a><a href="./contact.html#quote">Pedir orçamento</a></div>
+      </div>
+      <div style="padding-top:4px">
+        <p class="small"><strong style="color:rgba(245,240,232,.5)">Contacto:</strong> +258 86 68 12 508</p>
+        <p class="small" style="margin-top:10px">© 2026 House Prime Decors, Lda.<br>Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

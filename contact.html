@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="House Prime Decors — Design de interiores e acabamentos de alto padrão em Maputo e Matola."/>
+  <title>House Prime Decors — Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div id="grain" aria-hidden="true"></div>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+
+  <header class="header scrolled" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="House Prime Decors">
+        <div class="logo" aria-hidden="true"></div>
+        <span>
+          <span class="name">House Prime Decors</span>
+          <span class="tag">Design & Acabamentos</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="./index.html">Home</a>
+        <a href="./services.html">Serviços</a>
+        <a href="./projects.html">Projetos</a>
+        <a href="./process.html">Processo</a>
+        <a href="./about.html">Sobre</a>
+        <a href="./contact.html" aria-current="page">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline js-wa" href="#" aria-label="WhatsApp">
+          
+          WhatsApp
+        </a>
+        <a class="btn btn-primary" href="./contact.html#quote" aria-label="Pedir orçamento">
+          
+          Pedir orçamento
+        </a>
+
+        <button class="btn btn-outline btn-icon hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mmenu" id="mmenu" aria-hidden="true">
+    <div class="mmenu-panel">
+      <div class="mmenu-card">
+        <div class="mmenu-top">
+          <div class="brand" style="gap:10px">
+            <div class="logo" aria-hidden="true"></div>
+            <span>
+              <span class="name">House Prime Decors</span>
+              <span class="tag">Maputo • Matola</span>
+            </span>
+          </div>
+          <button class="btn btn-outline btn-icon" id="menuClose" aria-label="Fechar menu">✕</button>
+        </div>
+        <div class="mmenu-links" aria-label="Links do menu">
+          <a href="./index.html" data-close >Home</a>
+          <a href="./services.html" data-close >Serviços</a>
+          <a href="./projects.html" data-close >Projetos</a>
+          <a href="./process.html" data-close >Processo</a>
+          <a href="./about.html" data-close >Sobre</a>
+          <a href="./contact.html" data-close  aria-current="page">Contacto</a>
+        </div>
+        <div class="mmenu-cta">
+          <a class="btn btn-ghost js-wa" href="#" data-close>WhatsApp</a>
+          <a class="btn btn-primary" href="./contact.html#quote" data-close>Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    
+<section class="section">
+  <div class="container">
+    <div class="reveal">
+      <span class="badge">Contacto</span>
+      <h1 style="margin-top:12px">Pedir orçamento</h1>
+      <p class="lead">A forma mais rápida é pelo WhatsApp. Se preferir, preencha o formulário e enviamos direto para WhatsApp.</p>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:14px">
+      <article class="card reveal" id="quote">
+        <div class="card-pad">
+          <div class="kicker">Formulário</div>
+          <h3>Descreva o seu projeto</h3>
+
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" placeholder="Ex.: Ana" required/>
+            </div>
+            <div class="field">
+              <label for="phone">Telefone</label>
+              <input id="phone" name="phone" placeholder="Ex.: 84/86..." required/>
+            </div>
+            <div class="field">
+              <label for="type">Tipo de projeto</label>
+              <select id="type" name="type" required>
+                <option value="" selected>Selecione…</option>
+                <option>Cozinha americana</option>
+                <option>Teto falso</option>
+                <option>Closet / guarda-fato</option>
+                <option>Painel de TV</option>
+                <option>Pintura / barramento</option>
+                <option>Pavimento</option>
+                <option>Portas / janelas</option>
+                <option>Carpintaria</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" placeholder="Conte-nos o que pretende (local, tamanho, prazo, etc.)" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar para WhatsApp</button>
+          </form>
+
+          <p class="small" style="margin-top:10px">Contacto: <strong>+258 86 68 12 508</strong></p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-media" aria-label="Imagem de contacto (substituir por 4 fotos)"></div>
+        <div class="card-pad">
+          <div class="kicker">WhatsApp</div>
+          <h3>Resposta rápida</h3>
+          <p>Envie uma mensagem e iniciamos o processo: visita ao local → 3D → aprovação → orçamento → execução.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px">
+            <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
+            <a class="btn btn-ghost" href="./process.html">Ver processo</a>
+          </div>
+          <hr class="sep"/>
+          <div class="kicker">Áreas</div>
+          <p class="small" style="margin-top:10px">Maputo Cidade • Matola • Marracuene • Matola Rio • Boane • Katembe</p>
+          <p class="small" style="margin-top:10px"><strong>Fotos necessárias aqui:</strong> 4 (mix de resultados finais + detalhe premium).</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="cta reveal" style="margin-top:22px">
+      <div class="cta-row">
+        <div>
+          <h2>Quer começar hoje?</h2>
+          <p class="lead">Clique no WhatsApp e diga o tipo de projeto. O resto é connosco.</p>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end">
+          <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
+          <a class="btn btn-primary" href="#quote">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- Sticky CTA for mobile -->
+  <div class="mobile-cta" aria-label="Ações rápidas">
+    <div class="container">
+      <div class="wrap">
+        <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
+        <a class="btn btn-primary" href="./contact.html#quote">Pedir orçamento</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox (shared) -->
+  <div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador de imagens">
+    <div class="lb-card">
+      <div class="lb-top">
+        <div class="lb-title" id="lbTitle">Projeto</div>
+        <button class="btn btn-icon lb-close" id="lbClose" aria-label="Fechar">✕</button>
+      </div>
+      <div class="lb-body" id="lbBody">
+        <div class="lb-note" id="lbNote">Substituir por foto real</div>
+        <div class="lb-nav">
+          <button class="btn btn-icon" id="lbPrev" aria-label="Anterior">‹</button>
+          <button class="btn btn-icon" id="lbNext" aria-label="Próxima">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="gap:10px">
+          <div class="logo" aria-hidden="true"></div>
+          <span>
+            <span class="name">House Prime Decors, Lda</span>
+            <span class="tag">Design de interiores • Acabamentos</span>
+          </span>
+        </div>
+        <p class="small" style="margin-top:10px">
+          Atendemos: Maputo Cidade, Matola, Marracuene, Matola Rio, Boane e Katembe.
+        </p>
+        <div class="links" style="margin-top:10px">
+          <a class="js-wa" href="#">WhatsApp</a>
+          <a href="./contact.html#quote">Pedir orçamento</a>
+        </div>
+      </div>
+      <div>
+        <p class="small"><strong>Contacto:</strong> +258 86 68 12 508</p>
+        <p class="small" style="margin-top:8px">© 2026 House Prime Decors. Todos os direitos reservados.</p>
+        <p class="small" style="margin-top:8px">Nota: as imagens do site devem ser substituídas por fotos reais do portfólio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
