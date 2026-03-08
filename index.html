@@ -1,419 +1,123 @@
 <!doctype html>
 <html lang="pt">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="House Prime Decors — Design de interiores e acabamentos de alto padrão em Maputo e Matola.">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="House Prime Decors — Design de interiores e acabamentos de alto padrão em Maputo e Matola."/>
   <title>House Prime Decors</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
-<a class="skip" href="#main">Saltar para o conteúdo</a>
-
-<!-- HEADER -->
-<header class="header" id="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="House Prime Decors — Página inicial">
-      <div class="logo" aria-hidden="true"></div>
-      <div class="brand-text">
-        <span class="brand-name">House Prime Decors</span>
-        <span class="brand-sub">Design &amp; Acabamentos</span>
-      </div>
-    </a>
-
-    <nav class="nav" aria-label="Principal">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="services.html">Serviços</a>
-      <a href="projects.html">Projetos</a>
-      <a href="process.html">Processo</a>
-      <a href="about.html">Sobre</a>
-      <a href="contact.html">Contacto</a>
-    </nav>
-
-    <div class="header-actions">
-      <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
-      <a class="btn btn-dark" href="contact.html#quote">Orçamento</a>
-      <button class="btn btn-icon hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <header class="site-header on-hero" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="logo-mark" href="index.html"><div class="logo-sq" aria-hidden="true"></div><span><span class="logo-name">House Prime Decors</span><span class="logo-sub">Design &amp; Acabamentos</span></span></a>
+      <nav class="site-nav"><a href="index.html" aria-current="page">Home</a><a href="services.html">Serviços</a><a href="projects.html">Projetos</a><a href="process.html">Processo</a><a href="about.html">Sobre</a><a href="contact.html">Contacto</a></nav>
+      <div class="header-actions"><a class="header-wa js-wa" href="#">WhatsApp</a><button class="hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button></div>
     </div>
-  </div>
-</header>
-
-<!-- MOBILE MENU -->
-<div class="mmenu" id="mmenu" aria-hidden="true">
-  <div class="mmenu-inner">
-    <div class="mmenu-top">
-      <a class="brand" href="index.html">
-        <div class="logo" aria-hidden="true"></div>
-        <div class="brand-text">
-          <span class="brand-name">House Prime Decors</span>
-          <span class="brand-sub">Maputo · Matola</span>
-        </div>
-      </a>
-      <button class="btn btn-icon mmenu-close" id="mmenuClose" aria-label="Fechar menu">✕</button>
-    </div>
-    <nav class="mmenu-links" aria-label="Menu principal">
-      <a href="index.html" data-close aria-current="page">Home</a>
-      <a href="services.html" data-close>Serviços</a>
-      <a href="projects.html" data-close>Projetos</a>
-      <a href="process.html" data-close>Processo</a>
-      <a href="about.html" data-close>Sobre</a>
-      <a href="contact.html" data-close>Contacto</a>
-    </nav>
-    <div class="mmenu-cta">
-      <a class="btn btn-ghost js-wa" href="#" data-close>WhatsApp</a>
-      <a class="btn btn-dark" href="contact.html#quote" data-close>Pedir orçamento</a>
-    </div>
-  </div>
-</div>
-
-<main id="main">
-
-  <!-- ═══ HERO ═══ -->
-  <section class="hero" aria-label="Apresentação">
-
-    <div class="hero-slides" aria-hidden="true">
-      <div class="hero-slide active">
-        <img src="assets/kitchen-11.jpg" alt="" loading="eager" fetchpriority="high">
-      </div>
-      <div class="hero-slide">
-        <img src="assets/kitchen-01.jpg" alt="" loading="lazy">
-      </div>
-      <div class="hero-slide">
-        <img src="assets/ceiling-01.jpg" alt="" loading="lazy">
-      </div>
-      <div class="hero-slide">
-        <img src="assets/tvpanel-01.jpg" alt="" loading="lazy">
-      </div>
-    </div>
-
-    <div class="hero-content">
-      <p class="hero-label">Maputo · Matola · Marracuene · Boane</p>
-      <h1 class="hero-h1">Interiores que <em>definem</em> o seu espaço</h1>
-      <p class="hero-sub">Design de interiores e acabamentos premium. Do primeiro esboço ao detalhe final.</p>
-      <div class="hero-btns">
-        <a class="btn btn-dark" href="contact.html#quote">Pedir orçamento</a>
-        <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
-      </div>
-    </div>
-
-    <div class="hero-dots" aria-label="Slides">
-      <button class="hero-dot active" aria-label="Slide 1"></button>
-      <button class="hero-dot" aria-label="Slide 2"></button>
-      <button class="hero-dot" aria-label="Slide 3"></button>
-      <button class="hero-dot" aria-label="Slide 4"></button>
-    </div>
-
-    <p class="hero-caption" id="heroCaption">Cozinha americana · Maputo</p>
-
-  </section>
-
-  <!-- ═══ MARQUEE ═══ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span class="marquee-item">Cozinhas americanas</span>
-      <span class="marquee-item">Tetos falsos</span>
-      <span class="marquee-item">Painéis TV</span>
-      <span class="marquee-item">Closets</span>
-      <span class="marquee-item">Pavimentos</span>
-      <span class="marquee-item">Pintura</span>
-      <span class="marquee-item">Portas de madeira</span>
-      <span class="marquee-item">Alumínio</span>
-      <span class="marquee-item">Projeção em 3D</span>
-      <span class="marquee-item">Cozinhas americanas</span>
-      <span class="marquee-item">Tetos falsos</span>
-      <span class="marquee-item">Painéis TV</span>
-      <span class="marquee-item">Closets</span>
-      <span class="marquee-item">Pavimentos</span>
-      <span class="marquee-item">Pintura</span>
-      <span class="marquee-item">Portas de madeira</span>
-      <span class="marquee-item">Alumínio</span>
-      <span class="marquee-item">Projeção em 3D</span>
-    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav><a href="index.html" data-close aria-current="page">Home</a><a href="services.html" data-close>Serviços</a><a href="projects.html" data-close>Projetos</a><a href="process.html" data-close>Processo</a><a href="about.html" data-close>Sobre</a><a href="contact.html" data-close>Contacto</a></nav>
+    <div class="mobile-menu-foot"><a class="btn btn-ghost-dark js-wa" href="#" data-close>WhatsApp</a><a class="btn btn-solid" href="contact.html#quote" data-close>Pedir orçamento</a></div>
   </div>
 
-  <!-- ═══ STATS ═══ -->
-  <div class="stats">
-    <div class="stats-grid">
-      <div class="stat reveal">
-        <span class="stat-n" data-count="200" data-suffix="+">0</span>
-        <span class="stat-l">Projetos concluídos</span>
+  <main id="main">
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide"><img src="assets/kitchen-11.jpg" alt="" fetchpriority="high"></div>
+        <div class="hero-slide"><img src="assets/kitchen-01.jpg" alt="" loading="lazy"></div>
+        <div class="hero-slide"><img src="assets/ceiling-01.jpg" alt="" loading="lazy"></div>
+        <div class="hero-slide"><img src="assets/tvpanel-01.jpg" alt="" loading="lazy"></div>
       </div>
-      <div class="stat reveal">
-        <span class="stat-n" data-count="8" data-suffix="+">0</span>
-        <span class="stat-l">Anos de experiência</span>
+      <div class="hero-content wrap">
+        <div class="hero-eyebrow"><div class="hero-line" aria-hidden="true"></div><span class="label">Maputo · Matola · Marracuene · Boane</span></div>
+        <h1>Interiores que <em>definem</em> o seu espaço</h1>
+        <p class="lead">Design de interiores e acabamentos premium. Do primeiro esboço ao detalhe final.</p>
+        <div class="hero-actions"><a class="btn btn-solid" href="contact.html#quote">Pedir orçamento</a><a class="btn btn-ghost-dark js-wa" href="#">WhatsApp</a></div>
       </div>
-      <div class="stat reveal">
-        <span class="stat-n" data-count="6" data-suffix="">0</span>
-        <span class="stat-l">Zonas de serviço</span>
-      </div>
-      <div class="stat reveal">
-        <span class="stat-n" data-count="100" data-suffix="%">0</span>
-        <span class="stat-l">Satisfação garantida</span>
+      <div class="hero-dots"><button class="hero-dot" aria-label="Slide 1"></button><button class="hero-dot" aria-label="Slide 2"></button><button class="hero-dot" aria-label="Slide 3"></button><button class="hero-dot" aria-label="Slide 4"></button></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Cozinhas americanas</span><span class="marquee-item">Tetos falsos</span><span class="marquee-item">Painéis TV</span><span class="marquee-item">Closets</span><span class="marquee-item">Pavimentos</span><span class="marquee-item">Pintura e barramento</span><span class="marquee-item">Portas de madeira</span><span class="marquee-item">Alumínio</span><span class="marquee-item">Projeção em 3D</span>
+        <span class="marquee-item">Cozinhas americanas</span><span class="marquee-item">Tetos falsos</span><span class="marquee-item">Painéis TV</span><span class="marquee-item">Closets</span><span class="marquee-item">Pavimentos</span><span class="marquee-item">Pintura e barramento</span><span class="marquee-item">Portas de madeira</span><span class="marquee-item">Alumínio</span><span class="marquee-item">Projeção em 3D</span>
       </div>
     </div>
+
+    <div class="stats-bar">
+      <div class="wrap stats-grid">
+        <div class="stat-cell reveal"><span class="stat-n" data-count="200">0</span><span class="stat-l">Projetos concluídos</span></div>
+        <div class="stat-cell reveal"><span class="stat-n" data-count="8">0</span><span class="stat-l">Anos de experiência</span></div>
+        <div class="stat-cell reveal"><span class="stat-n" data-count="6">0</span><span class="stat-l">Zonas cobertas</span></div>
+        <div class="stat-cell reveal"><span class="stat-n" data-count="100" data-suffix="%">0</span><span class="stat-l">Satisfação garantida</span></div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="label">O que fazemos</span><h2>Três pilares, um resultado completo</h2></div><a class="btn btn-outline" href="services.html">Ver todos</a></div>
+        <div class="cards cards-3">
+          <article class="card reveal"><div class="card-img"><img src="assets/kitchen-03.jpg" alt="Cozinha com painéis ripados" loading="lazy"></div><div class="card-body"><span class="label">Design</span><h3>Design de interiores</h3><p>Cozinhas, closets, painéis TV e cortinas — planeamento com visão e funcionalidade.</p><a class="btn btn-link" href="services.html#design">Explorar</a></div></article>
+          <article class="card reveal"><div class="card-img"><img src="assets/ceiling-01.jpg" alt="Teto falso com LED" loading="lazy"></div><div class="card-body"><span class="label">Acabamentos</span><h3>Tetos falsos &amp; Pintura</h3><p>Tetos modernos com iluminação embutida, pintura e pavimentos premium.</p><a class="btn btn-link" href="services.html#acaba">Explorar</a></div></article>
+          <article class="card reveal"><div class="card-img"><img src="assets/kitchen-10.jpg" alt="Cozinha em madeira natural" loading="lazy"></div><div class="card-body"><span class="label">Instalações</span><h3>Portas &amp; Carpintaria</h3><p>Portas de madeira, alumínio e carpintaria — execução com acabamento premium.</p><a class="btn btn-link" href="services.html#instal">Explorar</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="label">Portfólio</span><h2>Trabalhos recentes</h2></div><a class="btn btn-outline" href="projects.html">Ver galeria completa</a></div>
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-cat="kitchens" data-img="assets/kitchen-11.jpg" data-title="Cozinha com ilha — Maputo" data-desc="Cozinha americana com ilha, madeira e LED sob armários"><div class="gallery-img" style="aspect-ratio:4/5"><img src="assets/kitchen-11.jpg" alt="Cozinha com ilha" loading="lazy"></div><div class="gallery-caption"><div class="gc-cat">Cozinhas</div><div class="gc-title">Cozinha com ilha</div></div></div>
+          <div class="gallery-item reveal" data-cat="kitchens" data-img="assets/kitchen-01.jpg" data-title="Cozinha bege &amp; madeira — Maputo" data-desc="Armários bege, bancada em madeira, LED linear no teto"><div class="gallery-img" style="aspect-ratio:4/3"><img src="assets/kitchen-01.jpg" alt="Cozinha bege e madeira" loading="lazy"></div><div class="gallery-caption"><div class="gc-cat">Cozinhas</div><div class="gc-title">Bege &amp; madeira</div></div></div>
+          <div class="gallery-item reveal" data-cat="ceilings" data-img="assets/ceiling-01.jpg" data-title="Sala com teto geométrico LED — Maputo" data-desc="Sala com teto falso em LED linear, piso polido e escada em vidro"><div class="gallery-img" style="aspect-ratio:3/4"><img src="assets/ceiling-01.jpg" alt="Sala com teto LED" loading="lazy"></div><div class="gallery-caption"><div class="gc-cat">Tetos &amp; Salas</div><div class="gc-title">Teto geométrico LED</div></div></div>
+          <div class="gallery-item reveal" data-cat="tvpanels" data-img="assets/tvpanel-01.jpg" data-title="Painel TV iluminado — Maputo" data-desc="Painel TV em laca cinza com prateleiras iluminadas e ripado lateral"><div class="gallery-img" style="aspect-ratio:3/4"><img src="assets/tvpanel-01.jpg" alt="Painel TV iluminado" loading="lazy"></div><div class="gallery-caption"><div class="gc-cat">Painéis TV</div><div class="gc-title">Painel iluminado</div></div></div>
+          <div class="gallery-item reveal" data-cat="kitchens" data-img="assets/kitchen-14.jpg" data-title="Cozinha em L com ilha — Matola" data-desc="Armários brancos lacados com ilha central ripada"><div class="gallery-img" style="aspect-ratio:4/3"><img src="assets/kitchen-14.jpg" alt="Cozinha em L" loading="lazy"></div><div class="gallery-caption"><div class="gc-cat">Cozinhas</div><div class="gc-title">Cozinha em L</div></div></div>
+          <div class="gallery-item reveal" data-cat="ceilings" data-img="assets/ceiling-02.jpg" data-title="Sala com LED azul — Maputo" data-desc="Sala com teto falso em LED azul, escada em vidro e piso polido"><div class="gallery-img" style="aspect-ratio:4/5"><img src="assets/ceiling-02.jpg" alt="Sala com LED azul" loading="lazy"></div><div class="gallery-caption"><div class="gc-cat">Salas</div><div class="gc-title">Sala com LED azul</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--surface)">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="label">Como trabalhamos</span><h2>Seis passos, zero surpresas</h2></div><a class="btn btn-outline" href="process.html">Ver detalhes</a></div>
+        <div class="steps-grid">
+          <div class="step-card reveal"><div class="step-num">01</div><div class="step-title">Contacto</div><p class="step-desc">Fale connosco e diga o que pretende.</p></div>
+          <div class="step-card reveal"><div class="step-num">02</div><div class="step-title">Visita ao local</div><p class="step-desc">Avaliamos o espaço no local.</p></div>
+          <div class="step-card reveal"><div class="step-num">03</div><div class="step-title">Projeção em 3D</div><p class="step-desc">Visualização do design antes da obra.</p></div>
+          <div class="step-card reveal"><div class="step-num">04</div><div class="step-title">Aprovação</div><p class="step-desc">Apresentação e validação do projeto consigo.</p></div>
+          <div class="step-card reveal"><div class="step-num">05</div><div class="step-title">Orçamento</div><p class="step-desc">Proposta clara sem surpresas.</p></div>
+          <div class="step-card reveal"><div class="step-num">06</div><div class="step-title">Execução</div><p class="step-desc">Obra com acabamento premium.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-block reveal">
+      <div class="cta-inner">
+        <div><span class="label" style="color:rgba(196,154,37,.6);margin-bottom:10px">Próximo passo</span><h2>Pronto para transformar o seu espaço?</h2><p class="lead">Atendemos Maputo, Matola, Marracuene, Matola Rio, Boane e Katembe.</p></div>
+        <div class="cta-actions"><a class="btn btn-ghost-dark js-wa" href="#">WhatsApp</a><a class="btn btn-solid" href="contact.html#quote">Pedir orçamento</a></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lb-bar"><div class="lb-info"><div class="lb-title" id="lbTitle"></div><div class="lb-counter" id="lbCount"></div></div><button class="lb-close" id="lbClose" aria-label="Fechar">✕</button></div>
+    <div class="lb-stage" id="lbStage"><div id="lbImage"></div><button class="lb-arrow prev" id="lbPrev" aria-label="Anterior">&#8249;</button><button class="lb-arrow next" id="lbNext" aria-label="Seguinte">&#8250;</button></div>
+    <div class="lb-foot" id="lbDesc"></div>
   </div>
 
-  <!-- ═══ SERVICES ═══ -->
-  <section class="section">
-    <div class="container">
-      <div class="shead">
-        <div class="reveal">
-          <p class="label">O que fazemos</p>
-          <h2 class="mt-8">Três pilares, um resultado completo</h2>
-        </div>
-        <a class="btn btn-outline reveal" href="services.html">Ver todos →</a>
-      </div>
+  <div class="sticky-cta"><a class="btn btn-ghost-dark js-wa" href="#">WhatsApp</a><a class="btn btn-solid" href="contact.html#quote">Pedir orçamento</a></div>
 
-      <div class="cards">
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="assets/kitchen-03.jpg" alt="Cozinha americana com painéis ripados" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3>Design de interiores</h3>
-            <p>Cozinhas, closets, painéis TV e cortinas — planeamento com visão e funcionalidade.</p>
-            <a class="btn-text" href="services.html#design">Explorar</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="assets/ceiling-01.jpg" alt="Sala com teto falso e LED" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3>Acabamentos</h3>
-            <p>Tetos falsos, pintura e pavimentos — detalhes que definem a qualidade de um espaço.</p>
-            <a class="btn-text" href="services.html#acaba">Explorar</a>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="assets/kitchen-12.jpg" alt="Cozinha cinza com prateleiras iluminadas" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3>Instalações</h3>
-            <p>Portas de madeira, alumínio e carpintaria — execução com acabamento premium.</p>
-            <a class="btn-text" href="services.html#instal">Explorar</a>
-          </div>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-body"><div class="footer-brand"><div class="logo-sq" aria-hidden="true"></div><span><span class="logo-name">House Prime Decors, Lda</span><span class="logo-sub">Design · Acabamentos</span></span></div><p class="caption">Maputo · Matola · Marracuene · Matola Rio · Boane · Katembe</p><div class="footer-links"><a class="js-wa" href="#">WhatsApp</a><a href="contact.html#quote">Pedir orçamento</a><a href="projects.html">Projetos</a></div></div>
+      <div class="footer-info"><p class="caption">+258 86 68 12 508</p><p class="caption" style="margin-top:6px">© 2026 House Prime Decors, Lda.</p></div>
     </div>
-  </section>
-
-  <!-- ═══ PORTFOLIO PREVIEW ═══ -->
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="shead">
-        <div class="reveal">
-          <p class="label">Portfólio</p>
-          <h2 class="mt-8">Projetos recentes</h2>
-        </div>
-        <a class="btn btn-dark reveal" href="projects.html">Ver galeria completa</a>
-      </div>
-
-      <div class="gallery" id="homeGallery">
-
-        <a class="gitem reveal"
-           href="#"
-           data-img="assets/kitchen-11.jpg"
-           data-title="Cozinha com ilha · Maputo"
-           data-cat="kitchens">
-          <img src="assets/kitchen-11.jpg" alt="Cozinha americana branca com madeira" loading="lazy">
-          <div class="gitem-overlay">
-            <p class="gitem-cat">Cozinhas</p>
-            <p class="gitem-title">Cozinha com ilha central</p>
-            <p class="gitem-open">Abrir</p>
-          </div>
-        </a>
-
-        <a class="gitem reveal"
-           href="#"
-           data-img="assets/kitchen-01.jpg"
-           data-title="Cozinha bege &amp; madeira · Maputo"
-           data-cat="kitchens">
-          <img src="assets/kitchen-01.jpg" alt="Cozinha americana bege com LED" loading="lazy">
-          <div class="gitem-overlay">
-            <p class="gitem-cat">Cozinhas</p>
-            <p class="gitem-title">Cozinha bege &amp; madeira</p>
-            <p class="gitem-open">Abrir</p>
-          </div>
-        </a>
-
-        <a class="gitem reveal"
-           href="#"
-           data-img="assets/tvpanel-01.jpg"
-           data-title="Painel TV iluminado · Maputo"
-           data-cat="tvpanels">
-          <img src="assets/tvpanel-01.jpg" alt="Painel TV com luz quente e prateleiras" loading="lazy">
-          <div class="gitem-overlay">
-            <p class="gitem-cat">Painéis TV</p>
-            <p class="gitem-title">Painel TV iluminado</p>
-            <p class="gitem-open">Abrir</p>
-          </div>
-        </a>
-
-        <a class="gitem reveal"
-           href="#"
-           data-img="assets/ceiling-01.jpg"
-           data-title="Sala com teto geométrico LED · Maputo"
-           data-cat="ceilings">
-          <img src="assets/ceiling-01.jpg" alt="Sala ampla com teto falso em LED linear" loading="lazy">
-          <div class="gitem-overlay">
-            <p class="gitem-cat">Tetos &amp; Salas</p>
-            <p class="gitem-title">Teto geométrico LED</p>
-            <p class="gitem-open">Abrir</p>
-          </div>
-        </a>
-
-        <a class="gitem reveal"
-           href="#"
-           data-img="assets/kitchen-07.jpg"
-           data-title="Cozinha preta &amp; madeira · Matola"
-           data-cat="kitchens">
-          <img src="assets/kitchen-07.jpg" alt="Cozinha com armários pretos e madeira" loading="lazy">
-          <div class="gitem-overlay">
-            <p class="gitem-cat">Cozinhas</p>
-            <p class="gitem-title">Preto &amp; madeira</p>
-            <p class="gitem-open">Abrir</p>
-          </div>
-        </a>
-
-        <a class="gitem reveal"
-           href="#"
-           data-img="assets/kitchen-09.jpg"
-           data-title="Cozinha com mármore negro · Matola"
-           data-cat="kitchens">
-          <img src="assets/kitchen-09.jpg" alt="Cozinha cinza escuro com balcão mármore" loading="lazy">
-          <div class="gitem-overlay">
-            <p class="gitem-cat">Cozinhas</p>
-            <p class="gitem-title">Mármore negro &amp; ripado</p>
-            <p class="gitem-open">Abrir</p>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ PROCESS ═══ -->
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="shead">
-        <div class="reveal">
-          <p class="label">Como trabalhamos</p>
-          <h2 class="mt-8">Do contacto à entrega</h2>
-        </div>
-        <a class="btn btn-outline reveal" href="process.html">Ver detalhes →</a>
-      </div>
-
-      <div class="process-grid">
-        <div class="pstep reveal">
-          <p class="pstep-n">01</p>
-          <h3>Contacto</h3>
-          <p>Fale connosco e descreva o seu projeto.</p>
-        </div>
-        <div class="pstep reveal">
-          <p class="pstep-n">02</p>
-          <h3>Visita ao local</h3>
-          <p>Avaliamos o espaço e as necessidades in situ.</p>
-        </div>
-        <div class="pstep reveal">
-          <p class="pstep-n">03</p>
-          <h3>Projeção 3D</h3>
-          <p>Visualiza o resultado antes de avançar.</p>
-        </div>
-        <div class="pstep reveal">
-          <p class="pstep-n">04</p>
-          <h3>Aprovação</h3>
-          <p>Validas o projeto com total controlo.</p>
-        </div>
-        <div class="pstep reveal">
-          <p class="pstep-n">05</p>
-          <h3>Orçamento</h3>
-          <p>Proposta clara, sem surpresas.</p>
-        </div>
-        <div class="pstep reveal">
-          <p class="pstep-n">06</p>
-          <h3>Execução</h3>
-          <p>Obra com acabamento premium e prazos cumpridos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ CTA ═══ -->
-  <div class="cta-block">
-    <div class="cta-row">
-      <div class="reveal">
-        <p class="label" style="color:rgba(196,164,107,.55)">Próximo passo</p>
-        <h2 class="mt-8">Pronto para transformar o seu espaço?</h2>
-        <p class="lead mt-12">Atendemos Maputo, Matola, Marracuene, Matola Rio, Boane e Katembe.</p>
-      </div>
-      <div class="cta-btns reveal">
-        <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
-        <a class="btn btn-dark" href="contact.html#quote">Pedir orçamento</a>
-      </div>
-    </div>
-  </div>
-
-</main>
-
-<!-- LIGHTBOX -->
-<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Visualizador de imagens">
-  <div class="lb-inner">
-    <div class="lb-bar">
-      <p class="lb-title" id="lbTitle"></p>
-      <span class="lb-counter" id="lbCounter"></span>
-      <button class="btn btn-icon lb-close-btn" id="lbClose" aria-label="Fechar">✕</button>
-    </div>
-    <div class="lb-img-wrap">
-      <img class="lb-img" id="lbImg" src="" alt="" loading="lazy">
-      <div class="lb-nav-btns" aria-label="Navegação">
-        <button class="lb-nav-btn" id="lbPrev" aria-label="Anterior">&#8249;</button>
-        <button class="lb-nav-btn" id="lbNext" aria-label="Seguinte">&#8250;</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STICKY CTA MOBILE -->
-<div class="sticky-cta" aria-label="Ações rápidas">
-  <div class="inner">
-    <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
-    <a class="btn btn-dark" href="contact.html#quote">Pedir orçamento</a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div class="brand-text">
-          <span class="brand-name">House Prime Decors, Lda</span>
-          <span class="brand-sub">Design de interiores · Acabamentos</span>
-        </div>
-      </div>
-      <p class="footer-p">Maputo · Matola · Marracuene · Matola Rio · Boane · Katembe</p>
-      <div class="footer-links">
-        <a class="js-wa" href="#">WhatsApp</a>
-        <a href="projects.html">Projetos</a>
-        <a href="contact.html">Contacto</a>
-      </div>
-    </div>
-    <div>
-      <p class="footer-p"><strong style="color:rgba(255,255,255,.45)">Telefone:</strong><br>+258 86 681 2508</p>
-      <p class="footer-p" style="margin-top:16px">© 2026 House Prime Decors, Lda.<br>Todos os direitos reservados.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
