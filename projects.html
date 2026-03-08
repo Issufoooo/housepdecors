@@ -1,308 +1,388 @@
 <!doctype html>
 <html lang="pt">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <meta name="description" content="House Prime Decors — Galeria de projetos de design de interiores em Maputo e Matola."/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="House Prime Decors — Galeria de projetos: cozinhas, tetos, painéis TV em Maputo e Matola.">
   <title>House Prime Decors — Projetos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="grain" aria-hidden="true"></div>
-  <a class="skip" href="#main">Saltar para o conteúdo</a>
 
-  <header class="header scrolled" id="header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="House Prime Decors">
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+
+<header class="header solid" id="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="House Prime Decors">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="brand-text">
+        <span class="brand-name">House Prime Decors</span>
+        <span class="brand-sub">Design &amp; Acabamentos</span>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="services.html">Serviços</a>
+      <a href="projects.html" aria-current="page">Projetos</a>
+      <a href="process.html">Processo</a>
+      <a href="about.html">Sobre</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
+      <a class="btn btn-dark" href="contact.html#quote">Orçamento</a>
+      <button class="btn btn-icon hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <div class="mmenu-inner">
+    <div class="mmenu-top">
+      <a class="brand" href="index.html">
         <div class="logo" aria-hidden="true"></div>
-        <span><span class="name">House Prime Decors</span><span class="tag">Design &amp; Acabamentos</span></span>
+        <div class="brand-text">
+          <span class="brand-name">House Prime Decors</span>
+          <span class="brand-sub">Maputo · Matola</span>
+        </div>
       </a>
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="./index.html">Home</a>
-        <a href="./services.html">Serviços</a>
-        <a href="./projects.html" aria-current="page">Projetos</a>
-        <a href="./process.html">Processo</a>
-        <a href="./about.html">Sobre</a>
-        <a href="./contact.html">Contacto</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn btn-outline js-wa" href="#">WhatsApp</a>
-        <a class="btn btn-primary" href="./contact.html#quote">Orçamento</a>
-        <button class="btn btn-icon btn-outline hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      </div>
+      <button class="btn btn-icon mmenu-close" id="mmenuClose" aria-label="Fechar">✕</button>
     </div>
-  </header>
+    <nav class="mmenu-links" aria-label="Menu">
+      <a href="index.html" data-close>Home</a>
+      <a href="services.html" data-close>Serviços</a>
+      <a href="projects.html" data-close aria-current="page">Projetos</a>
+      <a href="process.html" data-close>Processo</a>
+      <a href="about.html" data-close>Sobre</a>
+      <a href="contact.html" data-close>Contacto</a>
+    </nav>
+    <div class="mmenu-cta">
+      <a class="btn btn-ghost js-wa" href="#" data-close>WhatsApp</a>
+      <a class="btn btn-dark" href="contact.html#quote" data-close>Pedir orçamento</a>
+    </div>
+  </div>
+</div>
 
-  <div class="mmenu" id="mmenu" aria-hidden="true">
-    <div class="mmenu-panel">
-      <div class="mmenu-card">
-        <div class="mmenu-top">
-          <div class="brand"><div class="logo" aria-hidden="true"></div><span><span class="name">House Prime Decors</span><span class="tag">Maputo · Matola</span></span></div>
-          <button class="btn btn-icon btn-ghost" id="menuClose" aria-label="Fechar">✕</button>
-        </div>
-        <div class="mmenu-links">
-          <a href="./index.html" data-close>Home</a>
-          <a href="./services.html" data-close>Serviços</a>
-          <a href="./projects.html" data-close aria-current="page">Projetos</a>
-          <a href="./process.html" data-close>Processo</a>
-          <a href="./about.html" data-close>Sobre</a>
-          <a href="./contact.html" data-close>Contacto</a>
-        </div>
-        <div class="mmenu-cta">
-          <a class="btn btn-ghost js-wa" href="#" data-close>WhatsApp</a>
-          <a class="btn btn-primary" href="./contact.html#quote" data-close>Pedir orçamento</a>
-        </div>
+<main id="main">
+
+  <!-- Page hero -->
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <img src="assets/kitchen-14.jpg" alt="" loading="eager">
+    </div>
+    <div class="container page-hero-content">
+      <p class="label">Portfólio</p>
+      <h1>Os nossos projetos</h1>
+      <p class="lead">18 projetos reais em Maputo e Matola — clique para abrir em fullscreen.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="filters" aria-label="Filtrar por categoria">
+        <button class="chip on" data-filter="all">Todos (18)</button>
+        <button class="chip" data-filter="kitchens">Cozinhas (15)</button>
+        <button class="chip" data-filter="ceilings">Tetos &amp; Salas (2)</button>
+        <button class="chip" data-filter="tvpanels">Painéis TV (1)</button>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery" id="projectGallery">
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-01.jpg"
+           data-title="Cozinha bege &amp; madeira · Maputo">
+          <img src="assets/kitchen-01.jpg" alt="Cozinha americana com armários bege e balcão de madeira" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Bege &amp; madeira · LED</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-02.jpg"
+           data-title="Cozinha branca &amp; mármore · Matola">
+          <img src="assets/kitchen-02.jpg" alt="Cozinha branca com backsplash de madeira e piso de mármore" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Branca &amp; mármore</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-03.jpg"
+           data-title="Cozinha com painéis ripados · Maputo">
+          <img src="assets/kitchen-03.jpg" alt="Cozinha com painéis ripados e iluminação LED embutida" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Painéis ripados &amp; LED</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-04.jpg"
+           data-title="Cozinha luminosa · Matola">
+          <img src="assets/kitchen-04.jpg" alt="Cozinha branca brilhante com backsplash de madeira e LED" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cozinha luminosa &amp; LED</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-05.jpg"
+           data-title="Cozinha cream &amp; alumínio · Maputo">
+          <img src="assets/kitchen-05.jpg" alt="Cozinha cream com portas de alumínio preto e pendente decorativo" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cream &amp; alumínio</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-06.jpg"
+           data-title="Cozinha em U com LED · Maputo">
+          <img src="assets/kitchen-06.jpg" alt="Cozinha em U com armários brancos e teto falso com LED" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cozinha em U · LED</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-07.jpg"
+           data-title="Cozinha preto &amp; madeira · Matola">
+          <img src="assets/kitchen-07.jpg" alt="Cozinha com armários lacados preto e detalhes em madeira" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Preto &amp; madeira</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-08.jpg"
+           data-title="Cozinha cinza &amp; LED linear · Maputo">
+          <img src="assets/kitchen-08.jpg" alt="Cozinha cinza brilhante com vidro fumé e pendentes em espiral" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cinza &amp; LED linear</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-09.jpg"
+           data-title="Mármore negro &amp; madeira ripada · Matola">
+          <img src="assets/kitchen-09.jpg" alt="Cozinha escura com balcão de mármore negro e detalhe ripado dourado" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Mármore negro &amp; ripado</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-10.jpg"
+           data-title="Cozinha em madeira natural · Matola">
+          <img src="assets/kitchen-10.jpg" alt="Cozinha com armários em madeira natural e LED sob armários" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Madeira natural &amp; LED</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-11.jpg"
+           data-title="Cozinha com ilha central · Maputo">
+          <img src="assets/kitchen-11.jpg" alt="Grande cozinha com ilha central em preto e armários branco e madeira" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cozinha com ilha central</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-12.jpg"
+           data-title="Cinza escuro &amp; prateleiras douradas · Maputo">
+          <img src="assets/kitchen-12.jpg" alt="Cozinha com armários cinza escuro e prateleiras iluminadas em dourado" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cinza escuro &amp; dourado</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-13.jpg"
+           data-title="Cozinha com pendente duplo · Maputo">
+          <img src="assets/kitchen-13.jpg" alt="Cozinha com pendentes industriais duplos e teto falso dourado" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Pendente duplo &amp; teto</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-14.jpg"
+           data-title="Cozinha em L com ilha · Maputo">
+          <img src="assets/kitchen-14.jpg" alt="Cozinha em L branca com ilha e ripado, muita luz natural" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Cozinha em L &amp; ilha</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="kitchens"
+           data-img="assets/kitchen-15.jpg"
+           data-title="Cozinha branca &amp; teto LED geométrico · Maputo">
+          <img src="assets/kitchen-15.jpg" alt="Cozinha branca brilhante com teto falso em LED geométrico" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Cozinhas</p>
+            <p class="gitem-title">Branca &amp; LED geométrico</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="ceilings"
+           data-img="assets/ceiling-01.jpg"
+           data-title="Sala com teto geométrico LED · Maputo">
+          <img src="assets/ceiling-01.jpg" alt="Sala ampla com teto falso em LED linear geométrico e piso polido" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Tetos &amp; Salas</p>
+            <p class="gitem-title">Teto geométrico LED</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="ceilings"
+           data-img="assets/ceiling-02.jpg"
+           data-title="Sala com LED azul &amp; escada em vidro · Maputo">
+          <img src="assets/ceiling-02.jpg" alt="Sala com teto falso em LED azul, escada em vidro e lustre triplo" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Tetos &amp; Salas</p>
+            <p class="gitem-title">Sala com LED azul</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+        <a class="gitem" href="#"
+           data-cat="tvpanels"
+           data-img="assets/tvpanel-01.jpg"
+           data-title="Painel TV iluminado · Maputo">
+          <img src="assets/tvpanel-01.jpg" alt="Painel TV em laca cinza com prateleiras e luz quente" loading="lazy">
+          <div class="gitem-overlay">
+            <p class="gitem-cat">Painéis TV</p>
+            <p class="gitem-title">Painel TV &amp; prateleiras</p>
+            <p class="gitem-open">Abrir</p>
+          </div>
+        </a>
+
+      </div><!-- /gallery -->
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <div class="cta-row">
+      <div class="reveal">
+        <p class="label" style="color:rgba(196,164,107,.55)">O seu projeto é o próximo</p>
+        <h2 class="mt-8">Quer ver o seu espaço em 3D?</h2>
+        <p class="lead mt-12">Visualização 3D incluída no processo. Sem surpresas na execução.</p>
+      </div>
+      <div class="cta-btns reveal">
+        <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
+        <a class="btn btn-dark" href="contact.html#quote">Pedir orçamento</a>
       </div>
     </div>
   </div>
 
-  <main id="main">
+</main>
 
-    <!-- PAGE HERO -->
-    <div class="page-hero" style="--hero-bg-img:url('./assets/kitchen-14.jpg')">
-      <div class="container">
-        <span class="badge">Portfólio</span>
-        <h1>Os nossos projetos</h1>
-        <p class="lead">18 projetos reais — cozinhas, tetos falsos, salas e painéis TV.<br>Cada espaço conta uma história diferente.</p>
-      </div>
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Visualizador de projetos">
+  <div class="lb-inner">
+    <div class="lb-bar">
+      <p class="lb-title" id="lbTitle"></p>
+      <span class="lb-counter" id="lbCounter"></span>
+      <button class="btn btn-icon lb-close-btn" id="lbClose" aria-label="Fechar">✕</button>
     </div>
-
-    <section class="section">
-      <div class="container">
-
-        <!-- Gallery header with stats -->
-        <div class="gallery-header reveal">
-          <div class="gallery-meta">
-            <div class="gallery-meta-item"><span class="gm-n">18</span><span class="gm-l">Projetos</span></div>
-            <div class="gallery-meta-sep"></div>
-            <div class="gallery-meta-item"><span class="gm-n">15</span><span class="gm-l">Cozinhas</span></div>
-            <div class="gallery-meta-sep"></div>
-            <div class="gallery-meta-item"><span class="gm-n">2</span><span class="gm-l">Tetos &amp; Salas</span></div>
-            <div class="gallery-meta-sep"></div>
-            <div class="gallery-meta-item"><span class="gm-n">1</span><span class="gm-l">Painel TV</span></div>
-          </div>
-        </div>
-
-        <!-- Filters -->
-        <div class="filters reveal" aria-label="Filtrar projetos">
-          <button class="chip active" data-filter="all">Todos <span class="chip-count">18</span></button>
-          <button class="chip" data-filter="kitchens">Cozinhas <span class="chip-count">15</span></button>
-          <button class="chip" data-filter="ceilings">Tetos &amp; Salas <span class="chip-count">2</span></button>
-          <button class="chip" data-filter="tvpanels">Painéis TV <span class="chip-count">1</span></button>
-        </div>
-
-        <!-- MASONRY — todas as 18 fotos -->
-        <div class="masonry" style="margin-top:20px" id="projectGallery">
-
-          <!-- Kitchens -->
-          <div class="tile" data-cat="kitchens" data-title="Cozinha americana · Maputo" data-note="Armários bege, balcão de madeira, iluminação LED linear no teto" data-img="./assets/kitchen-01.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-01.jpg'); background-size:cover; background-position:center">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha bege &amp; madeira</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cozinha americana</div><div class="t2">Bege · madeira · LED</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha branca · Matola" data-note="Cozinha branca com backsplash de madeira e piso de mármore" data-img="./assets/kitchen-02.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-02.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha branca &amp; mármore</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cozinha branca</div><div class="t2">Mármore · madeira</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha com painéis ripados · Maputo" data-note="Armários com painéis ripados, iluminação embutida quente, piso polido" data-img="./assets/kitchen-03.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-03.jpg'); background-size:cover; background-position:center">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Painéis ripados com LED</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Painéis ripados</div><div class="t2">LED embutido · Maputo</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha luminosa · Matola" data-note="Armários brancos brilhantes, backsplash em madeira com LED, bancada em madeira" data-img="./assets/kitchen-04.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-04.jpg'); background-size:cover; background-position:center; aspect-ratio:3/4">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha branca com LED</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cozinha luminosa</div><div class="t2">LED · branco · madeira</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha cream · Maputo" data-note="Armários lacados cream, portas em alumínio preto, pendente decorativo, piso mármore" data-img="./assets/kitchen-05.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-05.jpg'); background-size:cover; background-position:center">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cream &amp; alumínio preto</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cozinha cream</div><div class="t2">Alumínio · pendente</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha em U · Maputo" data-note="Cozinha em U com ilha luminosa, armários brancos, teto falso com LED geométrico" data-img="./assets/kitchen-06.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-06.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha em U com LED</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cozinha em U</div><div class="t2">Teto LED · ilha</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha preto &amp; madeira · Matola" data-note="Armários lacados preto brilhante, detalhes em madeira natural, ilha central" data-img="./assets/kitchen-07.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-07.jpg'); background-size:cover; background-position:center; aspect-ratio:16/9">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Preto &amp; madeira</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Preto &amp; madeira</div><div class="t2">Ilha central · Matola</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha cinza com LED · Maputo" data-note="Armários cinza brilhante, vidro fumé no topo, pendentes em espiral, tira LED linear" data-img="./assets/kitchen-08.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-08.jpg'); background-size:cover; background-position:center">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cinza &amp; LED linear</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cinza &amp; LED linear</div><div class="t2">Vidro fumé · Maputo</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha com ilha preta · Matola" data-note="Grande ilha central em preto, armários branco/madeira, iluminação quente sob armários" data-img="./assets/kitchen-11.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-11.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Ilha preta &amp; madeira</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Ilha preta</div><div class="t2">Branco · madeira · Matola</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha cinza escuro · Maputo" data-note="Armários cinza escuro com balcão em branco, prateleiras iluminadas em dourado" data-img="./assets/kitchen-12.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-12.jpg'); background-size:cover; background-position:center">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cinza escuro &amp; dourado</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cinza escuro</div><div class="t2">Prateleiras douradas</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha pendente duplo · Maputo" data-note="Armários branco brilhante e madeira, pendentes industriais, teto falso dourado embutido" data-img="./assets/kitchen-13.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-13.jpg'); background-size:cover; background-position:center; aspect-ratio:3/4">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Pendente duplo &amp; teto dourado</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Pendente duplo</div><div class="t2">Branco · madeira · Maputo</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha com balcão em mármore negro · Matola" data-note="Cozinha cinza escuro, balcão em mármore negro polido, detalhe em madeira ripada dourada" data-img="./assets/kitchen-09.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-09.jpg'); background-size:cover; background-position:center; aspect-ratio:16/9">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Mármore negro &amp; madeira ripada</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Mármore negro</div><div class="t2">Madeira ripada · Matola</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha luminosa em L · Maputo" data-note="Cozinha com ilha central branca e frigorífico de encaixe, luz natural abundante" data-img="./assets/kitchen-14.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-14.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Cozinha em L com ilha</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Cozinha em L</div><div class="t2">Branco · ripados · Maputo</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha madeira natural · Matola" data-note="Armários em madeira natural, LED sob armários superiores, piso cerâmica" data-img="./assets/kitchen-10.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-10.jpg'); background-size:cover; background-position:center">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Madeira natural &amp; LED</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Madeira natural</div><div class="t2">LED sob armários · Matola</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <div class="tile" data-cat="kitchens" data-title="Cozinha branca com geometria · Maputo" data-note="Cozinha branca brilhante, teto falso com LED geométrico, ilha com ripado e fogão de encaixe" data-img="./assets/kitchen-15.jpg">
-            <div class="tile-media" style="background-image:url('./assets/kitchen-15.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Cozinhas</span><div class="hi-title">Branco &amp; geometria LED</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Branco &amp; geometria</div><div class="t2">Teto LED · Maputo</div></div><div class="tile-tag">cozinha</div></div>
-          </div>
-
-          <!-- Ceilings & Living -->
-          <div class="tile" data-cat="ceilings living" data-title="Sala com teto falso geométrico · Maputo" data-note="Sala ampla com teto falso em geometria LED linear, piso polido refletivo, escada em vidro" data-img="./assets/ceiling-01.jpg">
-            <div class="tile-media" style="background-image:url('./assets/ceiling-01.jpg'); background-size:cover; background-position:center; aspect-ratio:16/9">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Tetos &amp; Salas</span><div class="hi-title">Teto geométrico LED</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Teto geométrico</div><div class="t2">LED linear · Sala · Maputo</div></div><div class="tile-tag">teto</div></div>
-          </div>
-
-          <div class="tile" data-cat="ceilings living" data-title="Sala com LED azul · Maputo" data-note="Sala com teto falso em LED azul, escada em vidro, piso polido, lustre pendente triplo" data-img="./assets/ceiling-02.jpg">
-            <div class="tile-media" style="background-image:url('./assets/ceiling-02.jpg'); background-size:cover; background-position:center; aspect-ratio:4/5">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Tetos &amp; Salas</span><div class="hi-title">Sala com LED azul</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Sala com LED azul</div><div class="t2">Escada vidro · Maputo</div></div><div class="tile-tag">sala</div></div>
-          </div>
-
-          <!-- TV Panel -->
-          <div class="tile" data-cat="tvpanels living" data-title="Painel TV com iluminação quente · Maputo" data-note="Painel TV em laca cinza brilhante, prateleiras iluminadas com luz quente, ripado lateral" data-img="./assets/tvpanel-01.jpg">
-            <div class="tile-media" style="background-image:url('./assets/tvpanel-01.jpg'); background-size:cover; background-position:center; aspect-ratio:3/4">
-              <div class="tile-media-overlay"></div>
-              <div class="tile-hover-info"><span class="hi-cat">Painéis TV</span><div class="hi-title">Painel iluminado &amp; ripado</div><span class="hi-cta">Abrir</span></div>
-            </div>
-            <div class="tile-meta"><div><div class="t1">Painel TV</div><div class="t2">Luz quente · ripado · Maputo</div></div><div class="tile-tag">TV</div></div>
-          </div>
-
-        </div><!-- /masonry -->
-
-        <!-- CTA -->
-        <div class="cta reveal" style="margin-top:clamp(32px,5vw,64px)">
-          <div class="cta-row">
-            <div>
-              <span class="kicker" style="color:rgba(196,160,90,.6)">O seu projeto é o próximo</span>
-              <h2>Quer ver o seu espaço em 3D antes da obra?</h2>
-              <p class="lead">O nosso processo inclui projeção em 3D e aprovação antes de avançar.</p>
-            </div>
-            <div class="cta-actions">
-              <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
-              <a class="btn btn-primary" href="./contact.html#quote">Pedir orçamento</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <div class="mobile-cta" aria-label="Ações rápidas">
-    <div class="wrap">
-      <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
-      <a class="btn btn-primary" href="./contact.html#quote">Pedir orçamento</a>
-    </div>
-  </div>
-
-  <div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador de projetos">
-    <div class="lb-card">
-      <div class="lb-top">
-        <div class="lb-title" id="lbTitle">Projeto</div>
-        <button class="btn btn-icon lb-close" id="lbClose" aria-label="Fechar">✕</button>
-      </div>
-      <div class="lb-body" id="lbBody">
-        <div class="lb-note" id="lbNote"></div>
-        <div class="lb-nav">
-          <button class="btn btn-icon" id="lbPrev" aria-label="Anterior">‹</button>
-          <button class="btn btn-icon" id="lbNext" aria-label="Seguinte">›</button>
-        </div>
+    <div class="lb-img-wrap">
+      <img class="lb-img" id="lbImg" src="" alt="" loading="lazy">
+      <div class="lb-nav-btns">
+        <button class="lb-nav-btn" id="lbPrev" aria-label="Anterior">&#8249;</button>
+        <button class="lb-nav-btn" id="lbNext" aria-label="Seguinte">&#8250;</button>
       </div>
     </div>
   </div>
+</div>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand"><div class="logo" aria-hidden="true"></div><span><span class="name">House Prime Decors, Lda</span><span class="tag">Design de interiores · Acabamentos</span></span></div>
-        <p class="small" style="margin-top:14px">Maputo · Matola · Marracuene · Matola Rio · Boane · Katembe</p>
-        <div class="links"><a class="js-wa" href="#">WhatsApp</a><a href="./contact.html#quote">Pedir orçamento</a></div>
+<!-- STICKY CTA MOBILE -->
+<div class="sticky-cta">
+  <div class="inner">
+    <a class="btn btn-ghost js-wa" href="#">WhatsApp</a>
+    <a class="btn btn-dark" href="contact.html#quote">Pedir orçamento</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <span class="brand-name">House Prime Decors, Lda</span>
+          <span class="brand-sub">Design de interiores · Acabamentos</span>
+        </div>
       </div>
-      <div style="padding-top:4px">
-        <p class="small"><strong style="color:rgba(245,240,232,.5)">Contacto:</strong> +258 86 68 12 508</p>
-        <p class="small" style="margin-top:10px">© 2026 House Prime Decors, Lda.<br>Todos os direitos reservados.</p>
+      <p class="footer-p">Maputo · Matola · Marracuene · Matola Rio · Boane · Katembe</p>
+      <div class="footer-links">
+        <a class="js-wa" href="#">WhatsApp</a>
+        <a href="projects.html">Projetos</a>
+        <a href="contact.html">Contacto</a>
       </div>
     </div>
-  </footer>
+    <div>
+      <p class="footer-p"><strong style="color:rgba(255,255,255,.45)">Telefone:</strong><br>+258 86 681 2508</p>
+      <p class="footer-p" style="margin-top:16px">© 2026 House Prime Decors, Lda.<br>Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="./app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
